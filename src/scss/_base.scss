@@ -1,0 +1,26 @@
+* {
+  font-family: $C-Regular;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  color: $bodyColor;
+}
+html {
+  cursor: none;
+  scroll-behavior: smooth;
+  font-size: 100%;
+  &::-webkit-scrollbar{
+    width: 0;
+  }
+  &::-moz-scrollbar{
+    width: 0;
+  }
+}
+body {
+  background-color: $bgColor;
+}
+a{
+  cursor: none;
+}

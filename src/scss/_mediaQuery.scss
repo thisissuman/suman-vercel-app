@@ -1,0 +1,64 @@
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 85%;
+  }
+  .contactInfo{
+    .contactImg{
+      img{
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 65%;
+  }
+  .header {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+  ol {
+    width: 100vw;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    justify-content: space-between;
+    position: sticky;
+    top: 2rem;
+  }
+  .home {
+    width: 100%;
+  }
+  .contactInfo {
+    width: 95vw;
+    margin: 5vh 5vw;
+  }h1{
+    font-size: 1rem;
+  }
+  .about{
+    .image {
+      width: 250px;
+      height:350px;
+    }
+    .me{
+      width: 100%;
+    }
+  }
+  .skills{
+    .card{
+      width: 90vw;
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 55%;
+  }
+}
+

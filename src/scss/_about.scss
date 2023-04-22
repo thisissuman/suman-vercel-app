@@ -1,0 +1,115 @@
+.about {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5vh 5vw;
+  font-family: $Inter;
+  box-sizing: border-box;
+  line-height: 0.8;
+  text-align: center;
+  .heading {
+    font-size: 4rem;
+    font-weight: 800;
+    color: $highlightColor;
+    position: relative;
+    display: inline-block;
+    font-family: $C-Bold;
+    letter-spacing: -1px;
+    &:after {
+      content: "";
+      height: 0.3rem;
+      border-radius: 1rem;
+      width: 80%;
+      display: block;
+      background-color: $highlightColor3;
+      margin: 5px auto;
+      transition: 0.5s;
+      font-family: $C-Bold;
+    }
+    span {
+      letter-spacing: 3px;
+      color: $paranthesis;
+      text-shadow: 0px 1px 5px $paranthesis;
+    }
+  }
+  .image {
+    margin: 3rem auto;
+    width: 400px;
+    height: 500px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transition: 0.2s;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: -1rem;
+      left: -1rem;
+      border: 0.2rem solid $highlightColor;
+      transition: 0.2s;
+    }
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border: 0.2rem solid $highlightColor;
+      top: 1rem;
+      left: 1rem;
+      z-index: -1;
+      transition: 0.2s;
+    }
+    &:hover:after {
+      top: 0;
+      left: 0;
+      transition: 0.2s;
+    }
+    &:hover:before {
+      top: 0;
+      left: 0;
+      transition: 0.2s;
+    }
+    &:hover {
+      box-shadow: 1px 1px 10px rgb(135, 255, 225),
+        1px 1px 15px rgb(135, 255, 225);
+      filter: brightness(105%);
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .me {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 7rem;
+    h1 {
+      font-size: 4rem;
+      color: $highlightColor2;
+      margin: 2rem 0;
+    }
+    p {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      span {
+        color: $highlightColor;
+        text-shadow: 0px 0px 3px $highlightColor;
+      }
+    }
+    h3 {
+      font-size: 2rem;
+      margin-top: 3rem;
+      color: $highlightColor;
+      span {
+        color: $highlightColor2;
+        line-height: 1.2;
+        font-size: 3rem;
+        .love{
+          color: $highlightColor3;
+        }
+      }
+    }
+  }
+}

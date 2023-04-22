@@ -1,0 +1,92 @@
+.contact {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5vh 5vw;
+  font-family: $Inter;
+  box-sizing: border-box;
+  line-height: 0.8;
+  text-align: center;
+  h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: $highlightColor;
+    position: relative;
+    display: inline-block;
+    font-family: $C-Bold;
+    letter-spacing: -1px;
+    &:after {
+      content: "";
+      height: 0.3rem;
+      border-radius: 1rem;
+      width: 80%;
+      display: block;
+      background-color: $highlightColor3;
+      margin: 5px auto;
+      transition: 0.5s;
+      font-family: $C-Bold;
+    }
+    span {
+      letter-spacing: 3px;
+      color: $paranthesis;
+      text-shadow: 0px 1px 5px $paranthesis;
+    }
+  }
+  .contactInfo {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width:90%;
+    height: 100%;
+    margin: 0 auto;
+    .contactImg{
+      img{
+        width: 350px;
+        height:auto;
+        margin-bottom: 10vh;
+      }
+    }
+    h2 {
+      margin: 5vh auto;
+      font-size: 1.7rem;
+      font-family: $SM-Regular;
+      text-align: left;
+      line-height: 3rem;
+      font-weight: 600;
+      letter-spacing: -1px;
+      word-spacing: -3px;
+      pre {
+        font-family: $SM-Regular;
+        text-shadow: 0px 0px 3px white;
+        a,
+        .variable,
+        .curlyBrace,
+        .key,
+        .values {
+          font-family: $SM-Regular;
+        }
+        pre {
+          color: white;
+        }
+        .variable {
+          color: $codeVariable;
+          text-shadow: 0px 0px 3px $codeVariable;
+        }
+        .curlyBrace {
+          color: $codeTag;
+          text-shadow: 0px 0px 3px $codeTag;
+        }
+        .key {
+          color: $codeString;
+          text-shadow: 0px 0px 3px $codeString;
+        }
+        a {
+          text-decoration: none;
+          &:hover {
+            color: $highlightColor3;
+            text-shadow: 0px 0px 3px $highlightColor3;
+          }
+        }
+      }
+    }
+  }
+}

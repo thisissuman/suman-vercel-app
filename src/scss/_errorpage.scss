@@ -1,0 +1,74 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .glitch {
+    color: white;
+    font-family: $CodeFont;
+    font-weight: 800;
+    font-size: 4rem;
+    position: relative;
+    padding: 30px;
+    &:before,
+    &:after {
+      content: "Error:404;";
+      color: white;
+      position: absolute;
+      top: 0;
+      overflow: hidden;
+      padding: 30px;
+    }
+    &:before {
+      left: 3px;
+      text-shadow: -3px 0 red;
+      animation: glitch-before 2s linear 0s infinite alternate;
+    }
+    &:after {
+      left: -3px;
+      text-shadow: -3px 0 blue;
+      animation: glitch-after 2s linear 0s infinite alternate;
+    }
+  }
+  h2 {
+    font-size: 2.8rem;
+    margin-top: -2rem;
+    color: $highlightColor3;
+    font-family: $CodeFont;
+    font-weight: 600;
+    letter-spacing: -1px;
+    word-spacing: -7px;
+  }
+  a {
+    font-size: 1.5rem;
+    margin: 2rem;
+    color: $highlightColor;
+    text-decoration: none;
+    &:hover{
+      text-shadow: 0px 0px 3px $highlightColor;
+    }
+    i {
+      font-size: 1rem;
+      color: $highlightColor;
+      font-weight:800;
+    }
+  }
+}
+
+@keyframes glitch-before {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(150) + px, 350px, random(150) + px, 30px);
+    }
+  }
+}
+
+@keyframes glitch-after {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(150) + px, 350px, random(150) + px, 30px);
+    }
+  }
+}

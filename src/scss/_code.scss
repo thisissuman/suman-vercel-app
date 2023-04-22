@@ -1,0 +1,26 @@
+.code {
+  margin: 2rem 1rem;
+  h3,
+  .string,
+  .variable,
+  .tag,
+  .file {
+    font-family: $CodeFont;
+    color: $bodyColor;
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.5;
+  }
+  .string {
+    color: $codeString;
+  }
+  .variable {
+    color: $codeVariable;
+  }
+  .tag {
+    color: $codeTag;
+  }
+  .file {
+    color: $codeFile;
+  }
+}

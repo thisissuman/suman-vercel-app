@@ -1,0 +1,10 @@
+.version {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: $highlightColor;
+  font-weight: 500;
+  span {
+    color: $highlightColor;
+  }
+}

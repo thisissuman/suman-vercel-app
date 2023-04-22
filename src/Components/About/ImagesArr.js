@@ -1,0 +1,15 @@
+export const Images = [
+    "/images/profile/img1.jpeg",
+    "/images/profile/img2.jpeg",
+    "/images/profile/img3.jpeg",
+    "/images/profile/img4.jpeg",
+    "/images/profile/img5.jpeg",
+    "/images/profile/img6.jpeg",
+    "/images/profile/img7.jpeg",
+    "/images/profile/img8.jpeg",
+    "/images/profile/img9.jpeg",
+    "/images/profile/img10.jpeg",
+    "/images/profile/img11.jpeg",
+    "/images/profile/img12.jpeg",
+    "/images/profile/img13.jpeg",
+];

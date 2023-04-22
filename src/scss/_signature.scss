@@ -1,0 +1,14 @@
+.signature {
+  color: $highlightColor;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  span {
+    font-size: 0.7rem;
+    color: red;
+  }
+}

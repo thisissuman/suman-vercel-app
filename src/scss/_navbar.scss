@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  .logo {
+    h1 {
+      font-size: 3rem;
+      color: $highlightColor;
+      font-family: $SM-Regular;
+      font-weight: 600;
+      span {
+        color: $logoTag;
+      }
+      
+    }
+  }
+  nav {
+    ol {
+      display: flex;
+      li {
+        color: $highlightColor;
+        font-size: 1.5rem;
+        font-family: $SM-Regular;
+        list-style: none;
+        padding: 0.5rem;
+        a {
+          font-family: $SM-Regular;
+          text-decoration: none;
+          transition: 0.5s;
+          outline: none;
+          &:hover {
+            font-weight: 600;
+            color: $linkHover;
+            letter-spacing: 0.2rem;
+          }
+          &:active {
+            transition: 0.5s;
+          }
+          span {
+            font-family: $CodeFont;
+            color: $highlightColor;
+          }
+        }
+      }
+    }
+  }
+}
+.active{
+  color: $linkHover;
+  font-weight:600;
+  &::before{
+    content:'["';
+    color: $highlightColor;
+  }&::after{
+    content:'"]';
+    color: $highlightColor;
+  }span{
+    display: none;
+  }
+}
