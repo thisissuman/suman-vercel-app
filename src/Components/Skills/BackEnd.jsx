@@ -32,16 +32,16 @@ const BackEnd = () => {
             <figcaption>Express</figcaption>
           </figure>
           <figure>
-            <img src="/images/mongodb.svg" alt="MongoDB" title="MongoDB" />
-            <figcaption>MongoDB</figcaption>
-          </figure>
-          <figure>
             <img src="/images/firebase.svg" alt="Firebase" title="Firebase" />
             <figcaption>Firebase</figcaption>
           </figure>
           <figure>
             <img src="/images/mysql.svg" alt="MySQL" title="MySQL" />
             <figcaption>MySQL</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/oracle.svg" alt="MySQL" title="MySQL" />
+            <figcaption>Oracle PL/SQL</figcaption>
           </figure>
         </div>
       </motion.div>

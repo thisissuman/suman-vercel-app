@@ -19,6 +19,10 @@ const DevTools = () => {
         <br />
         <hr />
         <div className="tech">
+        <figure>
+            <img src="/images/linux.png" alt="Postman" title="Postman" />
+            <figcaption>Linux</figcaption>
+          </figure>
           <figure>
             <img src="/images/git.svg" alt="Git" title="Git" />
             <figcaption>Git</figcaption>
@@ -38,10 +42,6 @@ const DevTools = () => {
           <figure>
             <img src="/images/npm-icon.svg" alt="NPM" title="NPM" />
             <figcaption>NPM</figcaption>
-          </figure>
-          <figure>
-            <img src="/images/yarn.svg" alt="Yarn" title="Yarn" />
-            <figcaption>Yarn</figcaption>
           </figure>
           <figure>
             <img
